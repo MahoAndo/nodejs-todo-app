@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "9d05bbcc-406b-4cd9-aa9f-f5c836dd2f3e",
+		"name": "NodejsTodoApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27717509"
+	},
+	"item": [
+		{
+			"name": "Create todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"task3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all todo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:3000/api/v1/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "Get single todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/v1/tasks/64935ca41cf76c5f925e4a30"
+			},
+			"response": []
+		},
+		{
+			"name": "Update single todo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"task1-update\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/tasks/649356413d7cec09808732af"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete single todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"task1-update\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/tasks/6493570a3d7cec09808732b1"
+			},
+			"response": []
+		}
+	]
+}
