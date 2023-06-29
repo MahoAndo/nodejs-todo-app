@@ -99,6 +99,8 @@ letter-spacing: var(--letterSpacing);
 text-transform: capitalize;
 }
 
+.login-form,
+.register-form,
 .task-form,
 .single-task-form {
 width: 90vw;
@@ -106,13 +108,19 @@ max-width: var(--fixed-width);
 margin: 0 auto;
 margin-top: 6rem;
 }
+
+.login-form,
+.register-form,
 .task-form h4 {
 font-size: 1.4rem;
 text-align: center;
 margin-bottom: 1rem;
 }
 
-.task-form .form-alert {
+.login-form,
+.register-form,
+.task-form,
+.form-alert {
 margin-top: 1rem;
 }
 

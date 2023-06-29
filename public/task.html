@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <form class="login-form">
-        <h4>Login</h4>
+    <form class="task-form" action="/task">
+        <h4>Share Tasks App</h4>
         <div class="form-control">
-            <input type="text" name="username" class="task-input1" placeholder="username" required/>
-            <input type="email" name="email" class="task-input2" placeholder="email" required/>
-            <button type="submit" class="btn">Login</button>
+            <input type="text" name="name" class="task-input" placeholder="ex. cleaning"/>
+            <button type="submit" class="btn submit-btn">Send</button>
         </div>
-        <div id="showLink">
-            <h5><a href="task.html">TODO Task</a></h5>
-        </div>
-
-        <a href="register.html" class="btn back-link">User Register</a>
         <div class="form-alert"></div>
     </form>
 
+    <section class="tasks-container">
+        <div class="tasks"></div>
+    </section>
+
+    <a href="index.html" class="btn back-link">Logout</a>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./task.js"></script>
 </body>
 </html>
